@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = ActsAsContactable::VERSION
   s.authors     = ["Nora Alvarado"]
   s.email       = ["noragmora@gmail.com"]
-  s.homepage    = "http://github.com"
+  s.homepage    = "https://github.com/aromaron/acts_as_contactable.git"
   s.summary     = "TBD"
   s.description = "TBD"
   s.license     = "MIT"
