@@ -8,7 +8,7 @@ How to use my plugin.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'acts_as_contactable'
+gem 'acts-as-contactable'
 ```
 
 And then execute:
