@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    acts-as-contactable (0.1.3)
+    acts-as-contactable (0.1.4)
       rails (~> 5.2.1)
 
 GEM
