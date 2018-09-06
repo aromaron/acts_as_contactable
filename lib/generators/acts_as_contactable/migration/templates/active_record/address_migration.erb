@@ -1,0 +1,24 @@
+class ActsAsContactableAddressMigration < ActiveRecord::Migration<%= migration_version %>
+  def self.up
+    create_table :addressess do |t|
+
+      t.references :votable, :polymorphic => true
+
+      t.string :name,
+      t.string :street,
+      t.string :street2,
+      t.string :city,
+      t.string :state,
+      t.string :zip,
+      t.boolean :primary
+
+      t.timestamps
+    end
+
+    add_index :addressess, [:addressable_id, :addressable_type]
+  end
+
+  def self.down
+    drop_table :addressess
+  end
+end
