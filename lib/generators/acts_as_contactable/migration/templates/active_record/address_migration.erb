@@ -2,7 +2,7 @@ class ActsAsContactableAddressMigration < ActiveRecord::Migration<%= migration_v
   def self.up
     create_table :addressess do |t|
 
-      t.references :votable, :polymorphic => true
+      t.references :addressable, :polymorphic => true
 
       t.string :name
       t.string :street
