@@ -1,11 +1,15 @@
-require 'acts_as_contactable/engine'
+require "acts_as_contactable/engine"
 
 module ActsAsContactable
   def self.included(base)
-    base.class_eval do
-      has_many :addressess, class_name: 'ActsAsContactable::Address',
-                            as: :addressable,
-                            dependent: :destroy
+    base.extend ClassMethods
+  end
+
+  module ClassMethods
+    def acts_as_contactable
+      class_eval do
+        has_many :addresses, as: :addressable
+      end
     end
   end
 end
