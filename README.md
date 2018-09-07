@@ -12,7 +12,7 @@ Acts As Contactable is a Ruby Gem specifically written for Rails/ActiveRecord mo
 ### Install
 
 ```ruby
-gem 'acts-as-contactable'
+gem 'acts-as-contactable', require: 'acts_as_contactable'
 ```
 
 And then execute:
