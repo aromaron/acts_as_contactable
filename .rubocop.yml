@@ -92,7 +92,7 @@ Layout/SpaceInsideParens:
 # Check quotes usage according to lint rule below.
 Style/StringLiterals:
   Enabled: true
-  EnforcedStyle: double_quotes
+  EnforcedStyle: single_quotes
 
 # Detect hard tabs, no hard tabs.
 Layout/Tab:
@@ -117,5 +117,5 @@ Lint/EndAlignment:
   EnforcedStyleAlignWith: variable
 
 # Use my_method(my_arg) not my_method( my_arg ) or my_method my_arg.
-Lint/RequireParentheses:
+Layout/RequireParentheses:
   Enabled: true
