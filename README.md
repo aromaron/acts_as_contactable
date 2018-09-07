@@ -29,8 +29,8 @@ $ gem install acts-as-contactable
 Acts As Contactable uses an Addresses table to store information. To generate and run the migration use.
 
 ```
-  rails generate acts_as_contactable:migration
-  rake db:migrate
+rails generate acts_as_contactable:migration
+rake db:migrate
 ```
 
 ## Usage
@@ -39,7 +39,7 @@ Acts As Contactable uses an Addresses table to store information. To generate an
 
 ```ruby
 class User < ActiveRecord::Base
-acts_as_contactable
+  acts_as_contactable
 end
 ```
 
