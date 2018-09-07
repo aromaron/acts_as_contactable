@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'acts_as_contactable/engine'
+require "active_record"
 require 'active_support/inflector'
 
 $LOAD_PATH.unshift(File.dirname(__FILE__))

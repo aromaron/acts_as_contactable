@@ -1,8 +1,6 @@
 # frozen_string_literal: true
 
 $LOAD_PATH << File.join(File.dirname(__FILE__), '..', 'lib')
-require 'rails/engine'
-require 'active_record'
 require 'acts_as_contactable'
 require 'sqlite3'
 require 'simplecov'
