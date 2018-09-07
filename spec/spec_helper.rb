@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 $LOAD_PATH << File.join(File.dirname(__FILE__), '..', 'lib')
-require 'acts_as_contactable'
 require 'sqlite3'
 require 'simplecov'
+require 'acts_as_contactable'
 require 'factory_bot'
 
 Dir['./spec/shared_example/**/*.rb'].sort.each { |f| require f }
