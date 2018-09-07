@@ -9,11 +9,11 @@ require 'acts_as_contactable/version'
 Gem::Specification.new do |s|
   s.name        = 'acts-as-contactable'
   s.version     = ActsAsContactable::VERSION
-  s.authors     = ['Nora Alvarado']
-  s.email       = ['noragmora@gmail.com']
-  s.homepage    = 'https://github.com/aromaron/acts_as_contactable.git'
-  s.summary     = 'TBD'
-  s.description = 'TBD'
+  s.authors     = ['Nora Alvarado Mora']
+  s.email       = ['aromaron']
+  s.homepage    = 'https://rubygems.org/gems/acts-as-contactable'
+  s.summary     = 'A rails gem that adds contact information to an active record model (address, phone numbers)'
+  s.description = 'A rails gem that adds contact information to an active record model (address, phone numbers)'
   s.license     = 'MIT'
 
   s.files         = `git ls-files`.split("\n")
