@@ -1,15 +1,12 @@
 require "acts_as_contactable/engine"
+require "active_support/inflector"
+
+$LOAD_PATH.unshift(File.dirname(__FILE__))
 
 module ActsAsContactable
-  def self.included(base)
-    base.extend ClassMethods
-  end
-
-  module ClassMethods
-    def acts_as_contactable
-      class_eval do
-        has_many :addresses, as: :addressable
-      end
-    end
+  if defined?(ActiveRecord::Base)
+    require "acts_as_contactable/extenders/contactable"
+    require "acts_as_contactable/address"
+    ActiveRecord::Base.extend ActsAsContactable::Extenders::Contactable
   end
 end

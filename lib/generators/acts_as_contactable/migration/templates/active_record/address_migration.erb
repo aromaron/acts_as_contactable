@@ -1,6 +1,6 @@
 class ActsAsContactableAddressMigration < ActiveRecord::Migration<%= migration_version %>
   def self.up
-    create_table :addressess do |t|
+    create_table :addresses do |t|
 
       t.references :addressable, :polymorphic => true
 
@@ -15,10 +15,10 @@ class ActsAsContactableAddressMigration < ActiveRecord::Migration<%= migration_v
       t.timestamps
     end
 
-    add_index :addressess, [:addressable_id, :addressable_type]
+    add_index :addresses, [:addressable_id, :addressable_type]
   end
 
   def self.down
-    drop_table :addressess
+    drop_table :addresses
   end
 end
