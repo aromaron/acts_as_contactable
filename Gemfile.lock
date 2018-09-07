@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    acts-as-contactable (0.1.10)
+    acts-as-contactable (0.2.0)
 
 GEM
   remote: https://rubygems.org/
