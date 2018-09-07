@@ -1,19 +1,19 @@
 # frozen_string_literal: true
 
-$LOAD_PATH << File.join(File.dirname(__FILE__), "..", "lib")
+$LOAD_PATH << File.join(File.dirname(__FILE__), '..', 'lib')
 require 'rails/engine'
 require 'active_record'
-require "acts_as_contactable"
-require "sqlite3"
-require "simplecov"
-require "factory_bot"
+require 'acts_as_contactable'
+require 'sqlite3'
+require 'simplecov'
+require 'factory_bot'
 
-Dir["./spec/shared_example/**/*.rb"].sort.each { |f| require f }
-Dir["./spec/support/**/*.rb"].sort.each { |f| require f }
+Dir['./spec/shared_example/**/*.rb'].sort.each { |f| require f }
+Dir['./spec/support/**/*.rb'].sort.each { |f| require f }
 
 SimpleCov.start
 
-ActiveRecord::Base.establish_connection(adapter: "sqlite3", database: ":memory:")
+ActiveRecord::Base.establish_connection(adapter: 'sqlite3', database: ':memory:')
 
 ActiveRecord::Schema.define(version: 1) do
   create_table :addresses do |t|
