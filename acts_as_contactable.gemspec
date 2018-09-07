@@ -21,6 +21,8 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map { |f| File.basename(f) }
   s.require_paths = ['lib']
 
+  s.add_dependency "rails", "~> 5.2.1"
+
   s.add_development_dependency 'bump', '~> 0.5', '>= 0.5.3'
   s.add_development_dependency 'factory_bot', '~> 4.8'
   s.add_development_dependency 'rspec', '~> 3.6'
