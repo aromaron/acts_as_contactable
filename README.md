@@ -22,7 +22,7 @@ $ bundle
 
 Or install it yourself as:
 ```bash
-$ gem install acts_as_contactable
+$ gem install acts-as-contactable
 ```
 
 ### Data Migrations
