@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require "acts_as_contactable/engine"
 require "active_support/inflector"
 

@@ -7,7 +7,7 @@ module ActsAsContactable
         false
       end
 
-      def acts_as_contactable(args = {})
+      def acts_as_contactable(_args = {})
         require "acts_as_contactable/contactable"
         include ActsAsContactable::Contactable
 

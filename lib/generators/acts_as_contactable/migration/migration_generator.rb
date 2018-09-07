@@ -30,13 +30,10 @@ module ActsAsContactable
       end
     end
 
-
     private
 
     def migration_version
-      if rails5?
-        "[4.2]"
-      end
+      "[4.2]" if rails5?
     end
 
     def rails5?
